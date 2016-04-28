@@ -58,6 +58,7 @@
             this.output.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.output.Enabled = false;
             this.output.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.error.SetIconPadding(this.output, -20);
             this.output.Location = new System.Drawing.Point(12, 41);
             this.output.MaxLength = 15;
             this.output.Name = "output";
@@ -79,6 +80,7 @@
             this.btn7.TabStop = false;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btn8
             // 
@@ -93,6 +95,7 @@
             this.btn8.TabStop = false;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btn9
             // 
@@ -107,6 +110,7 @@
             this.btn9.TabStop = false;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btn4
             // 
@@ -121,6 +125,7 @@
             this.btn4.TabStop = false;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btn5
             // 
@@ -135,6 +140,7 @@
             this.btn5.TabStop = false;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btn6
             // 
@@ -149,6 +155,7 @@
             this.btn6.TabStop = false;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btn2
             // 
@@ -163,6 +170,7 @@
             this.btn2.TabStop = false;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btn3
             // 
@@ -177,6 +185,7 @@
             this.btn3.TabStop = false;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btn1
             // 
@@ -191,6 +200,7 @@
             this.btn1.TabStop = false;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btn0
             // 
@@ -205,6 +215,7 @@
             this.btn0.TabStop = false;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.Digit_Click);
             // 
             // btnDot
             // 
@@ -219,6 +230,7 @@
             this.btnDot.TabStop = false;
             this.btnDot.Text = ",";
             this.btnDot.UseVisualStyleBackColor = true;
+            this.btnDot.Click += new System.EventHandler(this.btnDot_Click);
             // 
             // btnSub
             // 
@@ -261,6 +273,7 @@
             this.btnAdd.TabStop = false;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnMul
             // 
@@ -291,6 +304,7 @@
             this.btnEq.TabStop = false;
             this.btnEq.Text = "=";
             this.btnEq.UseVisualStyleBackColor = true;
+            this.btnEq.Click += new System.EventHandler(this.btnEq_Click);
             // 
             // btnCE
             // 
@@ -351,7 +365,6 @@
             // error
             // 
             this.error.ContainerControl = this;
-            this.error.SetIconPadding(this.output, -20);
             // 
             // CalculatorView
             // 

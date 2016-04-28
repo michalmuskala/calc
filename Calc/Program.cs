@@ -16,7 +16,11 @@ namespace Calc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CalculatorView());
+
+            Calculator model = new Calculator();
+            CalculatorView view = new CalculatorView();
+            Presenter presenter = new Presenter(view, model);
+            Application.Run(view);
         }
     }
 }
